@@ -9,32 +9,32 @@ $userNameErr = $userEmailErr = $userPasswordErr = $userConfirmPassword ='';
 
 //register
 
-//if(isset ($POST[adduser]) ){
-   // $userName =  $_POST['uName'];  
-  //  $userEmail =  $_POST['uEmail'];  
-  //  $userPassword =  $_POST['uPassword'];  
-  //  $userconfirmPassword =  $_POST['uConfirmPassword']; 
-  //  if(empty($userName)) {
- //       $userNameErr = 'Name is required' ;
- //   }
+if(isset ($POST['adduser']) ){
+   $userName =  $_POST['uName'];  
+   $userEmail =  $_POST['uEmail'];  
+   $userPassword =  $_POST['uPassword'];  
+   $userconfirmPassword =  $_POST['uConfirmPassword']; 
+   if(empty($userName)) {
+       $userNameErr = 'Name is required' ;
+   }
 
-  //  if(empty($userEmail)) {
-  //      $userEmailErr = 'Email is required' ;
-  //  }
+   if(empty($userEmail)) {
+       $userEmailErr = 'Email is required' ;
+   }
 
- //    if(empty($userPassword)) {
-  //      $userPasswordErr = 'Password is required' ;
-  //  }
-  //  if(empty($userName)) {
-    //    $userConfrimPasswordErr = 'Confrim Password is required' ;
-   // }
-  //  if(empty($userNameErr) && empty($userNameErr) && empty($userNameErr) &&empty($userNameErr)  ){
+    if(empty($userPassword)) {
+       $userPasswordErr = 'Password is required' ;
+   }
+   if(empty($userName)) {
+       $userConfrimPasswordErr = 'Confrim Password is required' ;
+   }
+   if(empty($userNameErr) && empty($userNameErr) && empty($userNameErr) &&empty($userNameErr)  ){
        
-  //  }
+   }
                   
-//} 
+} 
 // login
-if(isset ($POST[userlogin]) ){
+if(isset ($POST['userlogin']) ){
     $userEmail =  $_POST['uEmail'];  
     $userPassword =  $_POST['uPassword'];  
 if(empty($userEmail)){
